@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Licensed Materials - Property of IBM
+			 5725-I43 (C) Copyright IBM Corp. 2006, 2013. All Rights Reserved.
+			 US Government Users Restricted Rights - Use, duplication or
+             disclosure restricted by GSA ADP Schedule Contract with IBM Corp. --><!-- Attribute "id" must be identical to application folder name --><application xmlns="http://www.worklight.com/application-descriptor" id="TestData" platformVersion="6.3.0.00.20150214-1702">
+    <displayName>TestData</displayName>
+    <description>TestData</description>
+    <author>
+        <name>application's author</name>
+        <email>application author's e-mail</email>
+        <homepage>http://mycompany.com</homepage>
+        <copyright>Copyright My Company</copyright>
+    </author>
+    <mainFile>index.html</mainFile>
+
+    <thumbnailImage>common/images/thumbnail.png</thumbnailImage>
+    <android securityTest="PushApplication-strong-mobile-securityTest" version="1.0">
+        <worklightSettings include="true"/>
+        <pushSender key="AIzaSyAQX2zNe8eVcjxP466rGHWIo_pgu8UGoIs" senderId="537710107090"/>
+        <security>
+            <encryptWebResources enabled="false"/>
+            <testWebResourcesChecksum enabled="false" ignoreFileExtensions="png, jpg, jpeg, gif, mp4, mp3"/>
+            <publicSigningKey/>
+        </security>
+    </android>
+</application>

@@ -1,0 +1,23 @@
+<ion-view view-title="Task {{TaskID}}">
+  <ion-nav-buttons side="right">
+        <button class="button button-clear button-assertive" ng-click="Options()">Options</button>
+      </ion-nav-buttons>
+  <ion-content>
+  
+  <div class="card">
+  <div class="item item-divider">
+   <h1>Task {{TaskID}} Description</h1>
+  </div>
+  <div class="item item-text-wrap">
+   <ion-item >This task is about bla bla bla</ion-item>
+   <ion-item style="Color:red"> Deadline {{Deadline}}</ion-item>
+  </div>
+  </div>
+    <div class="card">
+  <div class="item item-divider">
+    <h1>Members</h1>
+  </div>
+  <ion-item  ng-repeat="Member in Members"> {{Member.Name}} </ion-item>
+  </div>
+  </ion-content>
+</ion-view>

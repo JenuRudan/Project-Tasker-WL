@@ -1,0 +1,21 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Add Member</h1>
+    <div class="buttons">
+      <button class="button button-clear " ng-click="doClose()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <form>
+      <div class="list">
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Member Name</span>
+          <input type="text"ng-model="MemberData.Name" >
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive" type="submit" ng-click="AddMemberTask()">Add</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-modal-view>
